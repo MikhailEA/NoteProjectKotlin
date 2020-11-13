@@ -15,6 +15,4 @@ class MainViewModel : ViewModel() {
     fun viewState() : LiveData<String> = viewStateLiveData
 
 
-
-
 }
