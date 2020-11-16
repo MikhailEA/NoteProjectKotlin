@@ -9,10 +9,11 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.example.noteprojectkotlin.R
 import kotlinx.android.synthetic.main.activity_main.*
 
+
 class MainActivity : AppCompatActivity() {
 
     lateinit var viewModel: MainViewModel
-    lateinit var adapter: NotesRvAdapter
+    lateinit var adapter: NotesRVAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         rv_notes.layoutManager = GridLayoutManager(this, 2)
-        adapter = NotesRvAdapter()
+        adapter = NotesRVAdapter()
         rv_notes.adapter = adapter
 
         viewModel.viewState().observe(this, Observer { value ->
@@ -39,4 +40,3 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    }}

@@ -8,7 +8,7 @@ import com.example.noteprojectkotlin.R
 import com.example.noteprojectkotlin.data.entity.Note
 import kotlinx.android.synthetic.main.item_note.view.*
 
-class NotesRvAdapter : RecyclerView.Adapter<NotesRvAdapter.ViewHolder>()  {
+class NotesRVAdapter : RecyclerView.Adapter<NotesRVAdapter.ViewHolder>()  {
 
     var notes: List<Note> = listOf()
         set(value) {

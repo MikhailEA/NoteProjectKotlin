@@ -2,11 +2,11 @@ package com.example.noteprojectkotlin.data
 
 import com.example.noteprojectkotlin.data.entity.Note
 
-object NotesRepositiry {
+object NotesRepository {
     private val notes: List<Note>
 
     init {
-        notes = ListOf(
+        notes = listOf(
                 Note(
                         "Первая заметка",
                         "Текст первой заметки. Короткий, но интересный",
@@ -44,3 +44,5 @@ object NotesRepositiry {
         return notes
     }
 }
+
+
